@@ -1,0 +1,158 @@
+.first-color { 
+	background: #233142; 
+}
+	
+.second-color { 
+	background: #455d7a; 
+}
+
+.third-color { 
+	background: #f95959; 
+}
+
+.fourth-color { 
+	background: #e3e3e3; 
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: #e3e3e3;
+}
+
+.container{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.container>h1{
+    color: #233142;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header button{
+    width: 30px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    background-color: #f95959;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+form{
+    background-color: #233142;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+form input{
+    padding: 5px 10px;
+    align-self:  stretch;
+}
+form textarea{
+    align-self:  stretch;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+
+form .btns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+form .btns button{
+    flex-grow: 1;
+padding: 5px 10px;
+    /* flex-basis: 100px; */
+    cursor: pointer;
+    background-color: #f95959;
+    color: white;
+
+}
+
+form button:hover{
+    background-color: #ce5858;; 
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+}
+li{
+    padding:  15px;
+    gap: 10px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+}
+
+li .ListHead{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 5px;
+}
+ul li:not(:last-child){
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.171); */
+}
+
+li .right{
+    display: flex;
+    gap: 5px;
+}
+
+li img{
+    padding: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+li img:hover{
+    background-color: rgb(155, 187, 197);
+}
+li button{
+    border-radius: 5px;
+    color: white;
+    background-color: #f95959;
+    padding: 5px 20px;
+    width: 80%;
+    cursor: pointer;
+}
+
+li button:hover,
+header button:hover{
+    background-color: #e06060;
+}
